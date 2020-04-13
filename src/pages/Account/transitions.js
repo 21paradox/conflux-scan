@@ -158,7 +158,12 @@ class Transitions extends Component {
           if (row.contractCreated) {
             return (
               <div>
-                <ContractCell>{i18n('Contract Creation')}</ContractCell>
+                <Popup
+                  trigger={<ContractCell>{i18n('Contract Creation')}</ContractCell>}
+                  content={row.contractCreated}
+                  position="top center"
+                  hoverable
+                />
               </div>
             );
           }

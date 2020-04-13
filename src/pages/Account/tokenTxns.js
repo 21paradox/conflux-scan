@@ -187,13 +187,6 @@ class TokenTxns extends Component {
         dataIndex: 'to',
         title: i18n('To'),
         render: (text, row) => {
-          if (row.contractCreated) {
-            return (
-              <div>
-                <ContractCell>{i18n('Contract Creation')}</ContractCell>
-              </div>
-            );
-          }
           return (
             <div>
               <PCell>
